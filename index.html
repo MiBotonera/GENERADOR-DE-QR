@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Generador de Código QR</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="estilos.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" 
+			integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" 
+			crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<div class="contenedor">
+			<h1>Generador de Código QR</h1>
+			<label for="inputLink">Inserta el enlace:</label>
+			<input type="text" id="inputLink">
+			<button id="btnGenerarQR">Generar QR</button>
+			<div id="contenedorQR"></div>
+			<div id="opcionesQR">
+				<button id="btnDescargarQR">Descargar QR</button>
+				<button id="btnCompartirQR">Compartir QR</button>
+			</div>
+		</div>
+	</body>
+</html>
